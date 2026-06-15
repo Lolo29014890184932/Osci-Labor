@@ -11,7 +11,7 @@ import pyvisa
 
 
 #usb connection
-RESOURCE = "USB0::6833::1230::DS1ZC251001383::0::INSTR"
+RESOURCE = "USB0::6833::1230::DS1ZC251001383"
 
 def connect():
     rm = pyvisa.ResourceManager("@py")
