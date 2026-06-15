@@ -1,9 +1,17 @@
 import pyvisa
 
 
-OSZI_IP = "169.254.7.40" #169.254.7.40
-RESOURCE = f"TCPIP0::{OSZI_IP}::INSTR"
+#so bekommt man die usb verbindung raus 
+#einstecken einschalten
+#python3 -c "import pyvisa; rm=pyvisa.ResourceManager('@py'); print(rm.list_resources())"
 
+#Wifi connection bzw lan
+#OSZI_IP = "169.254.7.40" #169.254.7.40
+#RESOURCE = f"TCPIP0::{OSZI_IP}::INSTR"
+
+
+#usb connection
+RESOURCE = "USB0::6833::1230::DS1ZC251001383::0::INSTR"
 
 def connect():
     rm = pyvisa.ResourceManager("@py")
