@@ -1,8 +1,8 @@
 import pyvisa
 
 
-OSZI_IP = "169.254.17.40" #169.254.7.40
-RESOURCE = f"TCPIP0::{OSZI_IP}::5555::SOCKET"
+OSZI_IP = "169.254.7.40" #169.254.7.40
+RESOURCE = f"TCPIP0::{OSZI_IP}::INSTR"
 
 
 def connect():
